@@ -12,14 +12,40 @@ img
     margin: auto
 @media  ( max-width: 1200px )
     .container
-        width: 960px
+        width: 950px
 @media  ( max-width: 965px )
     .container
-        max-width: 750px
-        width: 95%
+        max-width: 740px
+        width: 90%
 .button
-  border-radius: 10px
-  background-color: $main-color
-  border: none
-  padding: 18px 30px
+    border-radius: 10px
+    background-color: $main-color
+    border: none
+    padding: 18px 30px
+    &:hover
+        background-color: lighten($main-color, 10%)
+        cursor: pointer
+    &:focus
+        outline: none
+        border-radius: 10px
+.section
+    padding: 90px 0
+    &-title
+        font-size: 24px
+        +bold
+    &-subtitle
+        font-size: 16px
+        +reg
+.input
+    border: 1px solid $border-input
+    padding: 20px 26px
+    font-size: 15px
+    border-radius: 10px
+    &:focus
+        border: 1px solid $main-color
+        border-radius: 10px
+        outline: none
+
+
+
 
